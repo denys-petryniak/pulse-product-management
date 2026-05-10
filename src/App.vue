@@ -14,10 +14,10 @@ onErrorCaptured(error => {
 const { user } = storeToRefs(useAuthStore())
 
 const AuthLayout = defineAsyncComponent(
-  () => import('./components/Layout/main/AuthLayout.vue'),
+  () => import('./components/layout/main/AuthLayout.vue'),
 )
 const GuestLayout = defineAsyncComponent(
-  () => import('./components/Layout/main/GuestLayout.vue'),
+  () => import('./components/layout/main/GuestLayout.vue'),
 )
 
 useMeta({
