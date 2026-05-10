@@ -1,39 +1,42 @@
-# Product Management App
+# Product Management Dashboard
 
-This template should help get you started developing with Vue 3 in Vite.
+> Built while learning Vue 3 through [The Vue.js 3 Master Class](https://vueschool.io/the-vuejs-3-master-class) at Vue School, then extended with Supabase, FormKit, TanStack Table, and shadcn-vue.
 
-## Recommended IDE Setup
+## Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Frontend**: Vue 3 (Composition API), TypeScript, Vite, Pinia, Vue Router
+- **Backend**: Supabase (Postgres + Auth)
+- **Forms**: FormKit
+- **Tables**: TanStack Vue Table
+- **UI**: shadcn-vue (Radix Vue) + Tailwind CSS
+- **Tooling**: Husky, Commitlint, ESLint, Prettier
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Setup
 
 ```sh
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+### Development
 
 ```sh
 pnpm dev
 ```
 
-### Type-Check, Compile and Minify for Production
+Runs at [http://localhost:4000](http://localhost:4000).
+
+### Supabase
+
+```sh
+pnpm supabase:link    # link the local project
+pnpm supabase:types   # regenerate database/types.ts from the live schema
+pnpm db:reset         # reset the linked database
+pnpm db:seed          # run the seed script
+```
+
+### Build
 
 ```sh
 pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
+pnpm preview
 ```
