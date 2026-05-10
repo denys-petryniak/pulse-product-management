@@ -44,12 +44,15 @@ watchDebounced(
         <CardDescription>Login to your account</CardDescription>
       </CardHeader>
       <CardContent>
+        <!-- TODO: wire up Google OAuth via supabase.auth.signInWithOAuth, then re-enable.
         <div class="mb-4 flex flex-col items-center justify-center gap-4">
           <Button variant="outline" class="w-full">
             Register with Google
           </Button>
           <Separator label="Or" />
         </div>
+        -->
+
         <form class="grid gap-4" @submit.prevent="signIn">
           <div class="grid gap-2">
             <Label id="email" class="text-left">Email</Label>
