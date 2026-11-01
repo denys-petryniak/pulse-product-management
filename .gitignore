@@ -29,3 +29,8 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# Local-only backups: they contain auth data and password hashes
+backups/**/auth_users.json
+db_cluster-*.backup.gz
+*.storage.zip
